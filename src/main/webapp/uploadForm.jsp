@@ -16,14 +16,10 @@
 </div>
 
 <div>
-    <ul>
-        <li th:each="file : ${files}">
         <c:forEach items="${files}" var="file">
-                <a href="<c:out value="${file}"/>"><c:out value="${file}"/></a>
+            <p/>
+                <img src="<c:out value="${file}"/>" width="200"/>
             </c:forEach>
-        </li>
-
-    </ul>
 </div>
 
 </body>
